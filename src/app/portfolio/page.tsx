@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 import GlassCard from "@/components/ui/GlassCard";
 import { PenTool, Code, Briefcase, Award, ArrowLeft, X, ExternalLink } from "lucide-react";
 import Link from "next/link";
@@ -16,7 +16,7 @@ type SubProject = {
 type Category = {
   title: string;
   description: string;
-  icon: JSX.Element;
+  icon: ReactNode;
   image: string;
   projects: SubProject[];
 };
@@ -71,8 +71,8 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen pt-32 pb-24 px-6 md:px-12 relative">
       <div className="container mx-auto max-w-7xl">
-        
-        <motion.div 
+
+        <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
@@ -85,7 +85,7 @@ export default function Portfolio() {
         </motion.div>
 
         <div className="text-center mb-20">
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -93,7 +93,7 @@ export default function Portfolio() {
           >
             My Portfolio
           </motion.h1>
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -106,22 +106,22 @@ export default function Portfolio() {
             <GlassCard key={item.title} delay={0.2 * index} className="group p-0 overflow-hidden flex flex-col h-full border-white/10 hover:border-white/30 cursor-pointer" onClick={() => setSelectedCategory(item)}>
               <div className="relative h-64 w-full overflow-hidden">
                 <div className="absolute inset-0 bg-black/40 z-10 group-hover:bg-black/20 transition-all duration-500"></div>
-                <img 
-                  src={item.image} 
-                  alt={item.title} 
+                <img
+                  src={item.image}
+                  alt={item.title}
                   className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                 />
                 <div className="absolute top-6 right-6 z-20 p-3 bg-black/60 backdrop-blur-md rounded-full border border-white/20 shadow-lg">
                   {item.icon}
                 </div>
               </div>
-              
+
               <div className="p-8 flex flex-col flex-grow">
                 <h3 className="text-2xl font-bold text-white tracking-wider mb-4 uppercase">{item.title}</h3>
                 <p className="text-white/60 font-light mb-8 flex-grow leading-relaxed">
                   {item.description}
                 </p>
-                <button 
+                <button
                   onClick={(e) => {
                     e.stopPropagation();
                     setSelectedCategory(item);
@@ -139,14 +139,14 @@ export default function Portfolio() {
       {/* Project Cards Modal */}
       <AnimatePresence>
         {selectedCategory && (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-8 bg-black/90 backdrop-blur-xl"
             onClick={() => setSelectedCategory(null)}
           >
-            <motion.div 
+            <motion.div
               initial={{ scale: 0.95, opacity: 0, y: 20 }}
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.95, opacity: 0, y: 20 }}
@@ -165,7 +165,7 @@ export default function Portfolio() {
                     <p className="text-white/50 text-sm font-light mt-1 hidden md:block">Sample projects and work</p>
                   </div>
                 </div>
-                <button 
+                <button
                   onClick={() => setSelectedCategory(null)}
                   className="p-3 rounded-full hover:bg-white/10 text-white/60 hover:text-white transition-colors border border-transparent hover:border-white/10"
                 >
@@ -177,7 +177,7 @@ export default function Portfolio() {
               <div className="p-6 md:p-8 overflow-y-auto bg-black/20 flex-1">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {selectedCategory.projects.map((proj, idx) => (
-                    <motion.div 
+                    <motion.div
                       key={idx}
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
@@ -185,8 +185,8 @@ export default function Portfolio() {
                       className="group bg-black/40 border border-white/10 rounded-2xl overflow-hidden hover:border-white/30 transition-all duration-300 flex flex-col"
                     >
                       <div className="relative h-48 w-full overflow-hidden">
-                        <img 
-                          src={proj.image} 
+                        <img
+                          src={proj.image}
                           alt={proj.title}
                           className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700 hover:scale-110"
                         />
