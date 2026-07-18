@@ -32,7 +32,7 @@ export default function Portfolio() {
       icon: <PenTool className="w-8 h-8 text-white" strokeWidth={1.5} />,
       image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=600&auto=format&fit=crop",
       projects: [
-        { title: "Online Banking App Design", description: "Modern, minimalist UI for a banking app focusing on accessibility.", image: "/Online_banking_appdesign.webp", link:"https://www.figma.com/proto/k68qbYeCt3KPOpKcBhUIF1/Banking-App-dash-Board?node-id=0-1&t=AESKs4zIDq97AhEl-1"},
+        { title: "Online Banking App Design", description: "Modern, minimalist UI for a banking app focusing on accessibility.", image: "/Online_banking_appdesign.webp", link: "https://www.figma.com/proto/k68qbYeCt3KPOpKcBhUIF1/Banking-App-dash-Board?node-id=0-1&t=AESKs4zIDq97AhEl-1" },
         // { title: "E-Library App Design", description: "Modern, minimalist UI for a library app focusing on accessibility.", image: "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?q=80&w=600&auto=format&fit=crop" },
         // { title: "Agency Branding", description: "Complete brand identity and web design for a creative digital agency.", image: "https://images.unsplash.com/photo-1555421689-491a97ff2040?q=80&w=600&auto=format&fit=crop" },
       ]
@@ -43,7 +43,7 @@ export default function Portfolio() {
       icon: <Code className="w-8 h-8 text-white" strokeWidth={1.5} />,
       image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=600&auto=format&fit=crop",
       projects: [
-        { title: "My professional Portfolio website", description: "I built this website to showcase my skills and projects to potential employers. It features a clean, modern design with a focus on user experience.", image: "/portfolio.webp", link:"https://m-pavithar-flf5.vercel.app" },
+        { title: "My professional Portfolio website", description: "I built this website to showcase my skills and projects to potential employers. It features a clean, modern design with a focus on user experience.", image: "/portfolio.webp", link: "https://m-pavithar-flf5.vercel.app" },
         // { title: "SaaS Dashboard", description: "Real-time analytics and data visualization portal using React and Recharts.", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format&fit=crop" },
         // { title: "Real Estate App", description: "Property listing platform with interactive maps and messaging.", image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=600&auto=format&fit=crop" },
       ]
@@ -64,7 +64,7 @@ export default function Portfolio() {
       icon: <Award className="w-8 h-8 text-white" strokeWidth={1.5} />,
       image: "/Certification.webp",
       projects: [
-        { title: "Google Project Management", description: "Trained in Agile methodologies, project planning, execution, and team coordination.", image: "/project_management.webp", link:"https://www.coursera.org/account/accomplishments/professional-cert/E0PQMX58ZVLW"},
+        { title: "Google Project Management", description: "Trained in Agile methodologies, project planning, execution, and team coordination.", image: "/project_management.webp", link: "https://www.coursera.org/account/accomplishments/professional-cert/E0PQMX58ZVLW" },
         // { title: "React Native Specialist", description: "Advanced mobile development and cross-platform architecture.", image: "https://images.unsplash.com/photo-1526498460520-4c246339dccb?q=80&w=600&auto=format&fit=crop" },
       ]
     }

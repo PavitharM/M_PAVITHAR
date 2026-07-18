@@ -30,7 +30,8 @@ export default function Motivation() {
         >
           <div className="flex flex-col sm:flex-row gap-6 w-full sm:w-auto justify-center">
             <a 
-              href="#" // Placeholder for CV link
+              
+              href="Mangaleswaran_Pavithar_CV.pdf"
               className="px-8 py-4 rounded-full border border-white/20 text-white font-medium tracking-widest uppercase hover:bg-white/10 hover:border-white/50 transition-all duration-300 backdrop-blur-sm"
             >
               See My CV
