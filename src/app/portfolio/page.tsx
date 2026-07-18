@@ -5,11 +5,12 @@ import GlassCard from "@/components/ui/GlassCard";
 import { PenTool, Code, Briefcase, Award, ArrowLeft, X, ExternalLink } from "lucide-react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
+import { StaticImageData } from "next/image";
 
 type SubProject = {
   title: string;
   description: string;
-  image: string;
+  image: string | StaticImageData;
   link?: string;
 };
 
@@ -17,7 +18,7 @@ type Category = {
   title: string;
   description: string;
   icon: ReactNode;
-  image: string;
+  image: string | StaticImageData;
   projects: SubProject[];
 };
 
@@ -31,8 +32,9 @@ export default function Portfolio() {
       icon: <PenTool className="w-8 h-8 text-white" strokeWidth={1.5} />,
       image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=600&auto=format&fit=crop",
       projects: [
-        { title: "Mobile App Redesign", description: "Modern, minimalist UI for a banking app focusing on accessibility.", image: "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?q=80&w=600&auto=format&fit=crop" },
-        { title: "Agency Branding", description: "Complete brand identity and web design for a creative digital agency.", image: "https://images.unsplash.com/photo-1555421689-491a97ff2040?q=80&w=600&auto=format&fit=crop" },
+        { title: "Online Banking App Design", description: "Modern, minimalist UI for a banking app focusing on accessibility.", image: "/Online_banking_appdesign.webp", link:"https://www.figma.com/proto/k68qbYeCt3KPOpKcBhUIF1/Banking-App-dash-Board?node-id=0-1&t=AESKs4zIDq97AhEl-1"},
+        // { title: "E-Library App Design", description: "Modern, minimalist UI for a library app focusing on accessibility.", image: "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?q=80&w=600&auto=format&fit=crop" },
+        // { title: "Agency Branding", description: "Complete brand identity and web design for a creative digital agency.", image: "https://images.unsplash.com/photo-1555421689-491a97ff2040?q=80&w=600&auto=format&fit=crop" },
       ]
     },
     {
@@ -41,9 +43,9 @@ export default function Portfolio() {
       icon: <Code className="w-8 h-8 text-white" strokeWidth={1.5} />,
       image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=600&auto=format&fit=crop",
       projects: [
-        { title: "E-Commerce Platform", description: "Next.js store with Stripe integration, headless CMS, and user auth.", image: "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=600&auto=format&fit=crop" },
-        { title: "SaaS Dashboard", description: "Real-time analytics and data visualization portal using React and Recharts.", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format&fit=crop" },
-        { title: "Real Estate App", description: "Property listing platform with interactive maps and messaging.", image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=600&auto=format&fit=crop" },
+        { title: "My professional Portfolio website", description: "I built this website to showcase my skills and projects to potential employers. It features a clean, modern design with a focus on user experience.", image: "/portfolio.webp", link:"https://m-pavithar-flf5.vercel.app" },
+        // { title: "SaaS Dashboard", description: "Real-time analytics and data visualization portal using React and Recharts.", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format&fit=crop" },
+        // { title: "Real Estate App", description: "Property listing platform with interactive maps and messaging.", image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=600&auto=format&fit=crop" },
       ]
     },
     {
@@ -52,18 +54,18 @@ export default function Portfolio() {
       icon: <Briefcase className="w-8 h-8 text-white" strokeWidth={1.5} />,
       image: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=600&auto=format&fit=crop",
       projects: [
-        { title: "Agile Sprint Tracker", description: "Custom Jira dashboards and workflow optimizations for dev teams.", image: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=600&auto=format&fit=crop" },
-        { title: "Product Roadmap", description: "Strategic quarterly planning and cross-functional team coordination.", image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=600&auto=format&fit=crop" }
+        // { title: "Agile Sprint Tracker", description: "Custom Jira dashboards and workflow optimizations for dev teams.", image: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=600&auto=format&fit=crop" },
+        // { title: "Product Roadmap", description: "Strategic quarterly planning and cross-functional team coordination.", image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=600&auto=format&fit=crop" }
       ]
     },
     {
       title: "Certifications",
       description: "Professional credentials and continuing education achievements in software engineering, cloud architecture, and project management.",
       icon: <Award className="w-8 h-8 text-white" strokeWidth={1.5} />,
-      image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=600&auto=format&fit=crop",
+      image: "/Certification.webp",
       projects: [
-        { title: "AWS Solutions Architect", description: "Advanced cloud infrastructure and scaling certification.", image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=600&auto=format&fit=crop" },
-        { title: "React Native Specialist", description: "Advanced mobile development and cross-platform architecture.", image: "https://images.unsplash.com/photo-1526498460520-4c246339dccb?q=80&w=600&auto=format&fit=crop" },
+        { title: "Google Project Management", description: "Trained in Agile methodologies, project planning, execution, and team coordination.", image: "/project_management.webp", link:"https://www.coursera.org/account/accomplishments/professional-cert/E0PQMX58ZVLW"},
+        // { title: "React Native Specialist", description: "Advanced mobile development and cross-platform architecture.", image: "https://images.unsplash.com/photo-1526498460520-4c246339dccb?q=80&w=600&auto=format&fit=crop" },
       ]
     }
   ];
@@ -107,7 +109,7 @@ export default function Portfolio() {
               <div className="relative h-64 w-full overflow-hidden">
                 <div className="absolute inset-0 bg-black/40 z-10 group-hover:bg-black/20 transition-all duration-500"></div>
                 <img
-                  src={item.image}
+                  src={typeof item.image === 'string' ? item.image : item.image.src}
                   alt={item.title}
                   className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                 />
@@ -186,7 +188,7 @@ export default function Portfolio() {
                     >
                       <div className="relative h-48 w-full overflow-hidden">
                         <img
-                          src={proj.image}
+                          src={typeof proj.image === 'string' ? proj.image : proj.image.src}
                           alt={proj.title}
                           className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700 hover:scale-110"
                         />
@@ -197,10 +199,10 @@ export default function Portfolio() {
                         <p className="text-white/60 font-light text-sm mb-6 flex-1 leading-relaxed">
                           {proj.description}
                         </p>
-                        <button className="flex items-center gap-2 text-sm text-white/50 hover:text-white transition-colors mt-auto group/btn">
+                        <a href={proj.link || "#"} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-white/50 hover:text-white transition-colors mt-auto group/btn w-fit">
                           <span>View Live</span>
                           <ExternalLink className="w-4 h-4 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
-                        </button>
+                        </a>
                       </div>
                     </motion.div>
                   ))}

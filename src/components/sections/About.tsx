@@ -18,7 +18,7 @@ export default function About() {
           {/* Tree Root Line (Hidden on mobile) */}
           <motion.div 
             initial={{ height: 0 }}
-            whileInView={{ height: "100%" }}
+            whileInView={{ height: "85%" }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 2.5, ease: "easeInOut" }}
             className="hidden md:block absolute left-1/2 top-0 bottom-0 w-[2px] bg-white/20 -translate-x-1/2 rounded-full z-0"
