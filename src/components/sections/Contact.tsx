@@ -36,7 +36,7 @@ export default function Contact() {
           </p>
         </div>
 
-        <GlassCard delay={0.2} className="max-w-3xl mx-auto border-white/20 p-8 md:p-12 relative overflow-hidden">
+        <GlassCard delay={0.2} className="max-w-3xl mx-auto border-white/20 p-6 md:p-12 relative overflow-hidden">
           {isSubmitted ? (
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex flex-col items-center justify-center py-16 h-[450px]">
               <CheckCircle2 className="w-20 h-20 text-white mb-6 animate-pulse" strokeWidth={1} />

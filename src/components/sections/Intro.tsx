@@ -14,11 +14,11 @@ export default function Intro() {
           transition={{ duration: 1 }}
           className="flex flex-col items-center justify-center"
         >
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white tracking-widest uppercase mb-6 text-glow px-2">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white tracking-widest uppercase mb-6 text-glow px-2 break-words">
             Mangaleswaran Pavithar
           </h1>
           
-          <div className="text-xl md:text-3xl font-medium text-white/80 h-10 md:h-12 tracking-wider mb-8">
+          <div className="text-lg sm:text-xl md:text-3xl font-medium text-white/80 min-h-[3rem] md:min-h-[4rem] flex items-center justify-center tracking-wider mb-8">
             <Typewriter
               words={[
                 'SOFTWARE ENGINEER...!',

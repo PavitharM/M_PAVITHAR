@@ -122,7 +122,7 @@ export default function Portfolio() {
                 </div>
               </div>
 
-              <div className="p-8 flex flex-col flex-grow">
+              <div className="p-6 md:p-8 flex flex-col flex-grow">
                 <h3 className="text-2xl font-bold text-white tracking-wider mb-4 uppercase">{item.title}</h3>
                 <p className="text-white/60 font-light mb-8 flex-grow leading-relaxed">
                   {item.description}

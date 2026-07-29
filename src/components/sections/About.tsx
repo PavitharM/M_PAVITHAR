@@ -31,7 +31,7 @@ export default function About() {
                 delay={0.2} 
                 initial={{ opacity: 0, x: -50, scale: 0.9 }}
                 whileInView={{ opacity: 1, x: 0, scale: 1 }}
-                className="relative group !p-10 border border-white/20"
+                className="relative group !p-6 md:!p-10 border border-white/20"
               >
                 <div className="absolute -inset-0.5 bg-white opacity-0 group-hover:opacity-10 rounded-xl blur transition duration-1000"></div>
                 <div className="relative flex flex-col h-full">
@@ -65,7 +65,7 @@ export default function About() {
                 delay={0.3} 
                 initial={{ opacity: 0, x: 50, scale: 0.9 }}
                 whileInView={{ opacity: 1, x: 0, scale: 1 }}
-                className="relative group !p-10 border border-white/20"
+                className="relative group !p-6 md:!p-10 border border-white/20"
               >
                 <div className="absolute -inset-0.5 bg-white opacity-0 group-hover:opacity-10 rounded-xl blur transition duration-1000"></div>
                 <div className="relative flex flex-col h-full">
@@ -107,7 +107,7 @@ export default function About() {
                 delay={0.3} 
                 initial={{ opacity: 0, x: -50, scale: 0.9 }}
                 whileInView={{ opacity: 1, x: 0, scale: 1 }}
-                className="relative group !p-10 border border-white/20"
+                className="relative group !p-6 md:!p-10 border border-white/20"
               >
                 <div className="absolute -inset-0.5 bg-white opacity-0 group-hover:opacity-10 rounded-xl blur transition duration-1000"></div>
                 <div className="relative flex flex-col h-full">
@@ -145,7 +145,7 @@ export default function About() {
                 delay={0.3} 
                 initial={{ opacity: 0, x: 50, scale: 0.9 }}
                 whileInView={{ opacity: 1, x: 0, scale: 1 }}
-                className="relative group !p-10 border border-white/20"
+                className="relative group !p-6 md:!p-10 border border-white/20"
               >
                 <div className="absolute -inset-0.5 bg-white opacity-0 group-hover:opacity-10 rounded-xl blur transition duration-1000"></div>
                 <div className="relative flex flex-col h-full">

@@ -38,7 +38,7 @@ export default function Hero() {
     >
       {/* Sticky container that locks to the screen for 150vh */}
       <div
-        className="sticky top-0 w-full h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-16 overflow-hidden pt-16 gap-8 md:gap-12"
+        className="sticky top-0 w-full h-screen flex flex-col md:flex-row items-center justify-center md:justify-between px-6 md:px-16 overflow-hidden pt-20 md:pt-16 pb-10 md:pb-0 gap-6 md:gap-12"
       >
 
         {/* Left Side: Large Box-Radian Profile Image */}
@@ -46,19 +46,19 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.95, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
-          className="relative w-full md:w-1/2 h-[50vh] md:h-[75vh] lg:h-[85vh] rounded-[2rem] md:rounded-[3rem] overflow-hidden border border-white/10 shadow-2xl z-10"
+          className="relative w-full md:w-1/2 h-[40vh] sm:h-[50vh] md:h-[75vh] lg:h-[85vh] rounded-[2rem] md:rounded-[3rem] overflow-hidden border border-white/10 shadow-2xl z-10"
         >
           <img
             src="/profile.jpg"
             alt="Mangaleswaran Pavithar"
-            className="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-700"
+            className="w-full h-full object-cover object-top md:object-center filter grayscale hover:grayscale-0 transition-all duration-700"
           />
           {/* Subtle overlay gradient on image */}
           <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d0d] via-transparent to-transparent opacity-80"></div>
         </motion.div>
 
         {/* Right Side: Text Container (Thought) */}
-        <div className="relative w-full md:w-1/2 h-[30vh] md:h-auto flex flex-col items-center md:items-start justify-center text-center md:text-left">
+        <div className="relative w-full md:w-1/2 flex-1 md:flex-none flex flex-col items-center md:items-start justify-center text-center md:text-left z-20">
 
           {/* Inspirational Quote */}
           <motion.div
