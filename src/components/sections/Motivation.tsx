@@ -29,15 +29,15 @@ export default function Motivation() {
           className="flex flex-col items-center space-y-8"
         >
           <div className="flex flex-col sm:flex-row gap-6 w-full sm:w-auto justify-center">
-            <a 
-              
+            <a
+
               href="Mangaleswaran_Pavithar_CV.pdf"
               className="px-8 py-4 rounded-full border border-white/20 text-white font-medium tracking-widest uppercase hover:bg-white/10 hover:border-white/50 transition-all duration-300 backdrop-blur-sm"
             >
               See My CV
             </a>
-            
-            <Link 
+
+            <Link
               href="/portfolio"
               className="px-8 py-4 rounded-full border border-white/20 text-white font-medium tracking-widest uppercase hover:bg-white/10 hover:border-white/50 transition-all duration-300 backdrop-blur-sm"
             >
@@ -46,7 +46,7 @@ export default function Motivation() {
           </div>
 
           <div className="pt-8">
-            <Link 
+            <Link
               href="/portfolio"
               className="group flex items-center gap-4 px-10 py-5 rounded-full bg-white text-black font-bold tracking-widest uppercase hover:bg-gray-200 transition-all duration-300 shadow-[0_0_30px_rgba(255,255,255,0.2)] hover:shadow-[0_0_40px_rgba(255,255,255,0.4)]"
             >
