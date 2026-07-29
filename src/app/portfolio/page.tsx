@@ -57,6 +57,7 @@ export default function Portfolio() {
       icon: <Briefcase className="w-8 h-8 text-white" strokeWidth={1.5} />,
       image: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=600&auto=format&fit=crop",
       projects: [
+        {title: "LawLink_Team Project", description: "I'm act as aProject manager in this project. I have done many things in this project like project planning, resource management, and team coordination. I also have done the frontend and backend development of this project.", image: "/projectmanagement_lawlink.webp", link: "https://trello.com/b/WCZKb4Kw/lawlink" },
         // { title: "Agile Sprint Tracker", description: "Custom Jira dashboards and workflow optimizations for dev teams.", image: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=600&auto=format&fit=crop" },
         // { title: "Product Roadmap", description: "Strategic quarterly planning and cross-functional team coordination.", image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=600&auto=format&fit=crop" }
       ]
